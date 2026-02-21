@@ -1,0 +1,58 @@
+body{
+    background-color: #000;
+    height: 100vh;
+    margin:0;
+}
+
+.box_navbar{
+    border: 5px solid #FFF;
+    display: inline-block;
+    align-content: center;
+    margin: auto;
+}
+
+.link{
+    padding: 2px;
+    margin:50px;
+    background-color: #789;
+}
+
+
+.navbar{
+    color:white;
+}
+
+
+
+.box{
+    width: 300px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.etiqueta{
+    font-family: sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.formulario{
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap:10px;
+    width: 300px;
+    height: 50px;
+    border: 2px solid grey;
+    border-radius: 10px;
+}
+
+.formulario_item{
+    width: 300px;
+    border-radius: 8px;
+}
