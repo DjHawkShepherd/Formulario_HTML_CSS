@@ -2,30 +2,48 @@ body{
     background-color: #000;
     height: 100vh;
     margin:0;
-}
-
-.box_navbar{
-    align-content: center;
-    background-color: rgb(83, 129, 255);
-    margin: auto;
-    height: 35px;
-}
-
-.link{
-    padding: 5px;
-    margin:30px;
-    background-color: rgb(119, 183, 248);
-    border-radius: 5px;
-    color: white;
-    text-decoration: none;
     font-family: sans-serif;
 }
 
+.imagen{
+    background-image: url("./foto.jpeg");
+    height: 200px;
+    margin:0;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 
 
 
+.nav{
+    /*align-content: center;*/
+    background-color: rgb(83, 129, 255);
+    /*margin: auto;*/
+    /*height: 35px;*/
+    border-radius: 5px;
+    /*box-sizing: border-box;*/
+}
 
+.nav__item{
+    display:inline-block;
+    /*border: 2px solid white*/
 
+}
+
+.nav__link{
+    margin:30px;
+    background-color: rgb(119, 183, 248);
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav__item:last-child .nav__link{
+    margin-left: 50px;
+    color:#000;
+
+}
 
 
 
@@ -42,7 +60,7 @@ body{
 }
 
 .etiqueta{
-    font-family: sans-serif;
+
     color: white;
     font-weight: bold;
     font-size: 20px;
