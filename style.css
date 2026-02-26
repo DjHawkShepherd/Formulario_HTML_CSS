@@ -1,33 +1,37 @@
 body{
     background-color: #000;
-    height: 100vh;
     margin:0;
     font-family: sans-serif;
+    
 }
 
 .imagen{
-    background-image: url("./foto.jpeg");
-    height: 200px;
+    background-image: url("./ultra-wide-nature-9e39l4h3spqgynd2.jpg");
+    height: 150px;
+    width: 100%;
     margin:0;
-    background-repeat: no-repeat;
+    background-size: 100%;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
-
-
 .nav{
-    /*align-content: center;*/
+    height: 40px;
     background-color: rgb(83, 129, 255);
-    /*margin: auto;*/
-    /*height: 35px;*/
+    box-sizing: border-box;
     border-radius: 5px;
-    /*box-sizing: border-box;*/
+    padding: 0px;
+}
+
+.nav__list{
+    margin: 0;  /*esto Dalto lo puso*/
 }
 
 .nav__item{
     display:inline-block;
     /*border: 2px solid white*/
-
+    box-sizing: border-box;
+    padding: 10px;
 }
 
 .nav__link{
@@ -37,13 +41,36 @@ body{
     color: rgb(255, 255, 255);
     text-decoration: none;
     font-weight: bold;
+    box-sizing: border-box;
+    padding: 5px;
 }
+
+.nav__link:hover{
+    background-color: rgb(29, 114, 199);
+}
+
+.nav__link:active{
+    background-color: rgb(1, 61, 121);
+}
+
 
 .nav__item:last-child .nav__link{
-    margin-left: 50px;
+    margin-left: 590px;
     color:#000;
+    box-sizing: border-box;
 
 }
+
+
+p{
+    color:#FFF;
+    /*width: 100vw ;*/
+    text-align: center;
+    padding-top: 10px;
+    border: 2px solid #FFF;
+    column-count: 1;
+}
+
 
 
 
@@ -53,7 +80,7 @@ body{
     height: 150px;
     display: flex;
     margin: auto;
-    margin-top: 200px;
+    margin-top: 100px;
     align-items: center;
     flex-direction: column;
     gap: 8px;
