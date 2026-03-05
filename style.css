@@ -5,9 +5,10 @@ body{
     
 }
 
+
 .imagen{
     background-image: url("./ultra-wide-nature-9e39l4h3spqgynd2.jpg");
-    height: 150px;
+    min-height: 150px;   /*No es recomendable tener un height fijo*/
     width: 100%;
     margin:0;
     background-size: 100%;
@@ -15,39 +16,44 @@ body{
     background-repeat: no-repeat;
 }
 
+
+/*---------------------------Navbar---------*/
 .nav{
-    height: 40px;
+    min-height: 40px;
     background-color: rgb(83, 129, 255);
-    box-sizing: border-box;
-    border-radius: 5px;
-    padding: 0px;
+    position: sticky;
+    /*box-sizing: border-box;*/
+    /*border-radius: 5px;*/
+    
 }
 
-.nav__list{
-    list-style:none;
+
+.nav__ul{
     margin: 0;  /*esto Dalto lo puso*/
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    /*align-items: center;*/
+    flex-wrap: wrap;
 }
+
 
 .nav__item{
-    /*display:inline-block;
-    /*border: 2px solid white*/
+    list-style:none;
     box-sizing: border-box;
-    padding: 10px;
 }
 
+
+
 .nav__link{
-    /*margin:30px;*/
+    margin:30px;
     background-color: rgb(119, 183, 248);
+    display: inline-block;
     border-radius: 5px;
     color: rgb(255, 255, 255);
     text-decoration: none;
     font-weight: bold;
     box-sizing: border-box;
     padding: 5px;
+    margin:6px;  /*se ve la separacion entre los elementos*/
 }
 
 .nav__link:hover{
@@ -59,23 +65,12 @@ body{
 }
 
 
-/*.nav__item:last-child .nav__link{
+.nav__item:last-child .nav__link{
     margin-left: 590px;
     color:#000;
     box-sizing: border-box;
 
-}*/
-
-
-p{
-    color:#FFF;
-    /*width: 100vw ;*/
-    text-align: center;
-    padding-top: 10px;
-    border: 2px solid #FFF;
-    column-count: 1;
 }
-
 
 
 
@@ -90,6 +85,7 @@ p{
     flex-direction: column;
     gap: 8px;
 }
+
 
 .etiqueta{
 
@@ -113,4 +109,17 @@ p{
 .formulario_item{
     width: 300px;
     border-radius: 8px;
+}
+
+
+
+
+.texto{
+    color:#FFF;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+    border: 2px solid #FFF;
+    column-count: 1;
 }
